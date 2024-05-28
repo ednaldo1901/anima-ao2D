@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    background-color: blanchedalmond;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.list{
+    list-style: none;
+    padding: 20px;
+    background-color: brown;
+    color: aliceblue;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 20px 20px 20px rgb(59, 3, 36);
+   
+}
+
+.list li{
+    padding: 12px 32px;
+    margin-bottom: 4px;
+    transition: background 1s;
+}
+
+.list li:hover {
+    background-color: rgb(65, 5, 5);
+}
+.list input {
+    accent-color: green;
+}
+.list input:checked + span {
+    text-decoration: line-through black;
+}
+
+.list li:has(input:checked) {
+    background-color: #5f1d1d;
+    border-radius: 5px;
+}
